@@ -104,6 +104,7 @@ body {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  margin-bottom: 94px;
 }
 .hero-title {
   color: #ffff;
@@ -129,7 +130,12 @@ body {
 }
 
 /* особенности */
+.peculiarities {
+  margin-top: 0px;
+  margin-bottom: 106px;
+}
 .peculiarities-title {
+  margin-top: 0px;
   color: var(--title-text-color);
   font-style: normal;
   font-weight: bold;
@@ -147,6 +153,10 @@ body {
 }
 
 /* чем мы занимаемся */
+.work {
+  margin-top: 0px;
+  margin-bottom: 106px;
+}
 .work-title {
   color: var(--title-text-color);
   font-style: normal;
