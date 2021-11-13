@@ -58,11 +58,12 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  
 }
 
 /* шапка */
 .page-header {
-
+border-bottom: 1px solid #ececec;
 }
 
 /* навигация сайта */
@@ -172,11 +173,10 @@ img {
 .hero {
   background-color: #2f303a;
   text-align: center;
-  width: 1600;
-  height: 600;
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .hero-title {
   max-width: 696px;
   margin: 0 auto;
@@ -188,19 +188,23 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-
 }
+
 .hero-button {
-  cursor: pointer;
+  min-width: 200px;
+  height: 50px;
+  background-color:var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   color: #ffffff;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0.06em;
-  background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+}
+
+.hero-button {
+  cursor: pointer;
 }
 
 /* особенности */
@@ -212,9 +216,13 @@ img {
   width: 270px;
 }
 
-.peculiarities-list .item +.item{
-  margin-left: 30px;
+.peculiarities-list .item {
+  margin-right: 30px;
 } 
+
+.peculiarities-list .item:nth-child(4n) {
+  margin-right: 0px;
+}
 
 .peculiarities-title {
   margin-top: 0px;
@@ -253,8 +261,12 @@ img {
 display: flex;
 }
 
-.work-list .item +.item {
-  margin-left: 30px;
+.work-list .item {
+  margin-right: 30px;
+}
+
+.work-list .item:nth-child(3n) {
+  margin-right: 0px;
 }
 
 
@@ -267,8 +279,12 @@ display: flex;
   display: flex;
 }
 
-.team-list .item +.item {
-  margin-left: 30px;
+.team-list .item {
+  margin-right: 30px;
+}
+
+.team-list .item:nth-child(4n) {
+  margin-right: 0px;
 }
 
 .team-list .item {
@@ -321,8 +337,12 @@ display: flex;
   margin-bottom: 20px;
 }
 
-.adress-list .item +.item {
-  margin-top: 9px;
+.adress-list .item {
+  margin-bottom: 9px;
+}
+
+.adress-list .item:nth-child(3n) {
+  margin-bottom: 0px;
 }
 
 .logofooter-begin {
@@ -389,12 +409,18 @@ display: flex;
   margin-bottom: 34px;
 }
 
-.filter-list .item +.item {
-margin-left: 8px;
+.filter-list .item{
+  margin-right: 8px;
+}
+
+.filter-list .item:nth-child(5n) {
+  margin-right: 0px;
 }
 
 .filter-btn {
   cursor: pointer;
+  padding: 6px 22px;
+  min-width: 73px;
   color: var(--title-text-color);
   font-style: normal;
   font-weight: 500;
@@ -431,15 +457,17 @@ margin-left: 8px;
   width: 370px;
 } 
 
-.proposal-list .item:nth-last-child(-n+3) {
-  margin-bottom: 0px;
-}
-
 .proposal-list .item:nth-child(3n+3) {
   margin-right: 0px;
 }
+
+.card-title {
+  padding: 20px 18px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
 .proposal-title {
-  padding: 20px, 24px;
   color: var(--title-text-color);
   font-style: normal;
   font-weight: bold;
@@ -448,10 +476,10 @@ margin-left: 8px;
   letter-spacing: 0.06em;
 }
 .proposal-text {
-  padding: 20px, 24px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
+
