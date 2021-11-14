@@ -455,6 +455,9 @@ display: flex;
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 } 
 
 .proposal-list .item:nth-child(3n+3) {
@@ -462,10 +465,7 @@ display: flex;
 }
 
 .card-title {
-  padding: 20px 0px 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  padding: 20px 24px 20px 24px;
 }
 .proposal-title {
   color: var(--title-text-color);
